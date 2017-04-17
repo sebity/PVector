@@ -3,17 +3,13 @@ package com.jantatham.pvector;
 public class Main {
 
     public static void main(String[] args) {
-        PVector pv1 = new PVector(2,3);
-        PVector pv2 = new PVector(4,7);
-        PVector pv3 = PVector.add(pv1,pv2);
+        System.out.println("Testing PVector Class...");
 
-        pv1.add(pv2);
+        PVector pv = new PVector(10,20,30);
 
-        System.out.println(pv3.x);
-        System.out.println(pv1.div(2).x);
-        System.out.println(pv2.div(0).x);
+        pv.normalize();
+
+        System.out.println(pv.x);
+
     }
-
-
-
 }

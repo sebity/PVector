@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ced93b3a-2f04-4878-8757-9dab6aa46994" name="Default" comment="" />
+    <list default="true" id="ced93b3a-2f04-4878-8757-9dab6aa46994" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jantatham/pvector/Main.java" afterPath="$PROJECT_DIR$/src/com/jantatham/pvector/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jantatham/pvector/PVector.java" afterPath="$PROJECT_DIR$/src/com/jantatham/pvector/PVector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jantatham/pvector/PVectorTest.java" afterPath="$PROJECT_DIR$/src/com/jantatham/pvector/PVectorTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/jantatham/pvector/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -31,17 +36,25 @@
       <file leaf-file-name="PVector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jantatham/pvector/PVector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="336">
+              <caret line="249" column="26" lean-forward="true" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
               <folding>
-                <element signature="e#2062#2063#0" expanded="true" />
-                <element signature="e#2102#2103#0" expanded="true" />
-                <element signature="e#3351#3352#0" expanded="true" />
-                <element signature="e#3390#3391#0" expanded="true" />
-                <element signature="e#4643#4644#0" expanded="true" />
-                <element signature="e#4683#4684#0" expanded="true" />
-                <element signature="e#8031#8032#0" expanded="true" />
-                <element signature="e#8071#8072#0" expanded="true" />
+                <element signature="e#2098#2099#0" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
+                <element signature="e#2853#2854#0" expanded="true" />
+                <element signature="e#2896#2897#0" expanded="true" />
+                <element signature="e#3598#3599#0" expanded="true" />
+                <element signature="e#3637#3638#0" expanded="true" />
+                <element signature="e#4483#4484#0" expanded="true" />
+                <element signature="e#4545#4546#0" expanded="true" />
+                <element signature="e#4714#4715#0" expanded="true" />
+                <element signature="e#4772#4773#0" expanded="true" />
+                <element signature="e#5328#5329#0" expanded="true" />
+                <element signature="e#5368#5369#0" expanded="true" />
+                <element signature="e#7937#7938#0" expanded="true" />
+                <element signature="e#7963#7964#0" expanded="true" />
+                <element signature="e#9194#9195#0" expanded="true" />
+                <element signature="e#9234#9235#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +63,8 @@
       <file leaf-file-name="PVectorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jantatham/pvector/PVectorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="81" column="28" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+            <state relative-caret-position="374">
+              <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -67,6 +80,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -75,9 +91,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/jantatham/pvector/PVector.java" />
         <option value="$PROJECT_DIR$/src/com/jantatham/pvector/Main.java" />
         <option value="$PROJECT_DIR$/src/com/jantatham/pvector/PVectorTest.java" />
-        <option value="$PROJECT_DIR$/src/com/jantatham/pvector/PVector.java" />
       </list>
     </option>
   </component>
@@ -86,6 +103,7 @@
     <option name="width" value="1910" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -562,27 +580,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PVectorTest - 2017.04.17 at 16h 51m 23s.xml">
-      <configuration name="PVectorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PVectorTest - 2017.04.17 at 16h 53m 53s.xml">
-      <configuration name="PVectorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PVectorTest - 2017.04.17 at 16h 54m 29s.xml">
-      <configuration name="PVectorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PVectorTest - 2017.04.17 at 16h 54m 43s.xml">
-      <configuration name="PVectorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PVectorTest - 2017.04.17 at 16h 56m 27s.xml">
-      <configuration name="PVectorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PVectorTest - 2017.04.17 at 16h 57m 47s.xml">
-      <configuration name="PVectorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PVectorTest - 2017.04.17 at 17h 01m 32s.xml">
-      <configuration name="PVectorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PVectorTest - 2017.04.17 at 17h 03m 28s.xml">
       <configuration name="PVectorTest" configurationId="JUnit" />
     </history-entry>
@@ -592,10 +589,30 @@
     <history-entry file="PVectorTest - 2017.04.17 at 18h 55m 09s.xml">
       <configuration name="PVectorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PVectorTest - 2017.04.17 at 22h 44m 24s.xml">
+      <configuration name="PVectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PVectorTest - 2017.04.17 at 22h 48m 10s.xml">
+      <configuration name="PVectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PVectorTest - 2017.04.17 at 23h 02m 07s.xml">
+      <configuration name="PVectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PVectorTest - 2017.04.17 at 23h 05m 03s.xml">
+      <configuration name="PVectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PVectorTest - 2017.04.17 at 23h 08m 39s.xml">
+      <configuration name="PVectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PVectorTest - 2017.04.17 at 23h 09m 06s.xml">
+      <configuration name="PVectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PVectorTest - 2017.04.17 at 23h 15m 39s.xml">
+      <configuration name="PVectorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1910" height="1080" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -606,15 +623,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25749466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25749466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -652,14 +669,22 @@
         <state relative-caret-position="1105">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#3351#3352#0" expanded="true" />
-            <element signature="e#3390#3391#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8071#8072#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#3598#3599#0" expanded="true" />
+            <element signature="e#3637#3638#0" expanded="true" />
+            <element signature="e#4483#4484#0" expanded="true" />
+            <element signature="e#4545#4546#0" expanded="true" />
+            <element signature="e#4714#4715#0" expanded="true" />
+            <element signature="e#4772#4773#0" expanded="true" />
+            <element signature="e#5328#5329#0" expanded="true" />
+            <element signature="e#5368#5369#0" expanded="true" />
+            <element signature="e#7937#7938#0" expanded="true" />
+            <element signature="e#7963#7964#0" expanded="true" />
+            <element signature="e#9194#9195#0" expanded="true" />
+            <element signature="e#9234#9235#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -685,14 +710,22 @@
         <state relative-caret-position="1343">
           <caret line="81" column="14" lean-forward="true" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
           <folding>
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#3351#3352#0" expanded="true" />
-            <element signature="e#3390#3391#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8071#8072#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#3598#3599#0" expanded="true" />
+            <element signature="e#3637#3638#0" expanded="true" />
+            <element signature="e#4483#4484#0" expanded="true" />
+            <element signature="e#4545#4546#0" expanded="true" />
+            <element signature="e#4714#4715#0" expanded="true" />
+            <element signature="e#4772#4773#0" expanded="true" />
+            <element signature="e#5328#5329#0" expanded="true" />
+            <element signature="e#5368#5369#0" expanded="true" />
+            <element signature="e#7937#7938#0" expanded="true" />
+            <element signature="e#7963#7964#0" expanded="true" />
+            <element signature="e#9194#9195#0" expanded="true" />
+            <element signature="e#9234#9235#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,47 +743,71 @@
         <state relative-caret-position="799">
           <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#3351#3352#0" expanded="true" />
-            <element signature="e#3390#3391#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8071#8072#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#3598#3599#0" expanded="true" />
+            <element signature="e#3637#3638#0" expanded="true" />
+            <element signature="e#4483#4484#0" expanded="true" />
+            <element signature="e#4545#4546#0" expanded="true" />
+            <element signature="e#4714#4715#0" expanded="true" />
+            <element signature="e#4772#4773#0" expanded="true" />
+            <element signature="e#5328#5329#0" expanded="true" />
+            <element signature="e#5368#5369#0" expanded="true" />
+            <element signature="e#7937#7938#0" expanded="true" />
+            <element signature="e#7963#7964#0" expanded="true" />
+            <element signature="e#9194#9195#0" expanded="true" />
+            <element signature="e#9234#9235#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jantatham/pvector/Main.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="34">
+          <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jantatham/pvector/PVectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="81" column="28" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+        <state relative-caret-position="374">
+          <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jantatham/pvector/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jantatham/pvector/PVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="336">
+          <caret line="249" column="26" lean-forward="true" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
           <folding>
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#3351#3352#0" expanded="true" />
-            <element signature="e#3390#3391#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8071#8072#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#3598#3599#0" expanded="true" />
+            <element signature="e#3637#3638#0" expanded="true" />
+            <element signature="e#4483#4484#0" expanded="true" />
+            <element signature="e#4545#4546#0" expanded="true" />
+            <element signature="e#4714#4715#0" expanded="true" />
+            <element signature="e#4772#4773#0" expanded="true" />
+            <element signature="e#5328#5329#0" expanded="true" />
+            <element signature="e#5368#5369#0" expanded="true" />
+            <element signature="e#7937#7938#0" expanded="true" />
+            <element signature="e#7963#7964#0" expanded="true" />
+            <element signature="e#9194#9195#0" expanded="true" />
+            <element signature="e#9234#9235#0" expanded="true" />
           </folding>
         </state>
       </provider>

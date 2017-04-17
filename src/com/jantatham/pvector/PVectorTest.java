@@ -55,6 +55,13 @@ public class PVectorTest {
     }
 
     @org.junit.Test
+    public void copy_pVector() throws Exception {
+        PVector pv1 = new PVector(4,8,16);
+        PVector pv2 = pv1.copy();
+        assertEquals(pv2.x, 4, 0);
+    }
+
+    @org.junit.Test
     public void div_pVector_by_scalar() throws Exception {
         PVector pv = new PVector(4,8,16);
         pv.div(2);
@@ -83,6 +90,20 @@ public class PVectorTest {
     }
 
     @org.junit.Test
+    public void magnitude_calculate() throws Exception {
+        PVector pv = new PVector(20,30,40);
+        double result = pv.mag();
+        assertEquals(result, 53.852, 0.001);
+    }
+
+    @org.junit.Test
+    public void magnitude_squared_calculate() throws Exception {
+        PVector pv = new PVector(20,30,40);
+        double result = pv.magSq();
+        assertEquals(result, 2900, 0);
+    }
+
+    @org.junit.Test
     public void mult_pVector_by_scalar() throws Exception {
         PVector pv = new PVector(1,2,3);
         pv.mult(5);
@@ -108,6 +129,14 @@ public class PVectorTest {
         assertEquals(pv2.x, 4, 0);
         assertEquals(pv2.y, 8, 0);
         assertEquals(pv2.z, 12, 0);
+    }
+
+    @org.junit.Test
+    public void normalize_vector() throws Exception {
+        PVector pv = new PVector(10, 20, 30);
+        pv.normalize();
+        assertEquals(pv.x, 0.267, 0.001);
+
     }
 
     @org.junit.Test
@@ -156,6 +185,13 @@ public class PVectorTest {
         PVector pv = new PVector(6,7,8);
         pv.setZ(5);
         assertEquals(pv.z, 5, 0);
+    }
+
+    @org.junit.Test
+    public void square_calculate() throws Exception {
+        PVector pv = new PVector();
+        double result = pv.square(5);
+        assertEquals(result, 25, 0);
     }
 
     @org.junit.Test

@@ -1,5 +1,7 @@
 package com.jantatham.pvector;
 
+import static java.lang.Math.sqrt;
+
 /**
  * The PVector Class handles the 2D and 3D vector translations.
  *
@@ -118,6 +120,16 @@ public class PVector {
     }
 
     /**
+     * This method creates a copy of the current vector by returning a new
+     * vector.
+     *
+     * @return new vector
+     */
+    public PVector copy() {
+        return new PVector(x, y, z);
+    }
+
+    /**
      * This method divides the current vector by a the scalar (n).
      *
      * @param n the scalar divider
@@ -171,6 +183,24 @@ public class PVector {
     }
 
     /**
+     * This method calculates the magnitude (length) of the vector
+     *
+     * @return vector magnitude
+     */
+    public double mag() {
+        return sqrt(square(x) + square(y) + square(z));
+    }
+
+    /**
+     * This method calculates the magnitude (length) of the vector, squared.
+     *
+     * @return vector magnitude squared
+     */
+    public double magSq() {
+        return (square(x) + square(y) + square(z));
+    }
+
+    /**
      * This method multiplies the current vector by a scalar.
      *
      * @param n the scalar multiplier
@@ -212,6 +242,19 @@ public class PVector {
             target.set(v1.x*n, v1.y*n, v1.z*n);
         }
         return target;
+    }
+
+    /**
+     * This method normalizes the vector to length 1 making it a unti vector.
+     *
+     * @return this vector
+     */
+    public PVector normalize() {
+        double m = this.mag();
+        if(m != 0) {
+            this.div(m);
+        }
+        return this;
     }
 
     /**
@@ -287,6 +330,16 @@ public class PVector {
     public PVector setZ(double z) {
         this.z = z;
         return this;
+    }
+
+    /**
+     * This method calculates the square of a scalar.
+     *
+     * @param n the scalar
+     * @return the squared result
+     */
+    public double square(double n) {
+        return n*n;
     }
 
     /**
