@@ -1,5 +1,6 @@
 package com.jantatham.pvector;
 
+import static java.lang.Math.atan2;
 import static java.lang.Math.sqrt;
 
 /**
@@ -182,6 +183,55 @@ public class PVector {
         return target;
     }
 
+
+    /**
+     * This method calculates the dot product of two vectors.
+     *
+     * @param v a vector
+     * @return the dot product
+     */
+    public double dot(PVector v) {
+        return x*v.x + y*v.y + z*v.z;
+    }
+
+
+    /**
+     * This method calculate the dot product of the vector passing in the
+     * X,Y,Z components.
+     *
+     * @param x the X component of the vector
+     * @param y the Y component of the vector
+     * @param z the Z component of the vector
+     * @return the dot product
+     */
+    public double dot(double x, double y, double z) {
+        return this.x*x + this.y*y + this.z*x;
+    }
+
+    /**
+     * This method calculates the angle of rotation for this vector in 2D only.
+     *
+     * @return the angle of rotation
+     */
+    public double heading() {
+        double angle = atan2(y,x);
+
+        return angle;
+    }
+
+    /**
+     * This method calculates the angle of rotation for a 2D Vector
+     *
+     * @param vx the target X vector
+     * @param vy the target Y vector
+     * @return the angle
+     */
+    public double heading(double vx, double vy) {
+        double angle = atan2(vy,vx) - atan2(y,x);
+
+        return angle;
+    }
+
     /**
      * This method calculates the magnitude (length) of the vector
      *
@@ -198,6 +248,19 @@ public class PVector {
      */
     public double magSq() {
         return (square(x) + square(y) + square(z));
+    }
+
+    /**
+     *
+     * @param value the incoming value to be converted
+     * @param start1 lower bound of the value's current range
+     * @param stop1 upper bound of the value's current range
+     * @param start2 lower bound of the value's target range
+     * @param stop2 upper bound of the value's target range
+     * @return the result
+     */
+    public double map(double value, double start1, double stop1, double start2, double stop2) {
+        return start2 + ((value - start1) * (stop2 - start2)) / (stop1 - start1);
     }
 
     /**
@@ -245,7 +308,7 @@ public class PVector {
     }
 
     /**
-     * This method normalizes the vector to length 1 making it a unti vector.
+     * This method normalizes the vector to length 1 making it a unit vector.
      *
      * @return this vector
      */
@@ -254,6 +317,82 @@ public class PVector {
         if(m != 0) {
             this.div(m);
         }
+        return this;
+    }
+
+
+    /**
+     * This method normalizes the vector (vec) passed in the parameter.
+     *
+     * @param vec the vector to be normalized
+     * @return the vector passed
+     */
+    public PVector normalize(PVector vec) {
+        if(vec == null) {
+            vec = new PVector();
+        }
+        double m = mag();
+        if(m > 0) {
+            vec.set(x/m, y/m, z/m);
+        }
+        else {
+            vec.set(x, y, z);
+        }
+
+        return vec;
+    }
+
+    /**
+     * This method rotates the vector by the specified angle using 2D vectors
+     * only (X,Y).
+     *
+     * @param theta the rotation angle
+     * @return this vector
+     */
+    public PVector rotate(double theta) {
+        double oldX = this.x;
+        this.x = (this.x * Math.cos(theta)) - (this.y * Math.sin(theta));
+        this.y = (oldX * Math.sin(theta)) + (this.y * Math.cos(theta));
+        return this;
+    }
+
+
+    /**
+     * This method rotates the vector in the Z axis be angle theta.
+     *
+     * @param theta the angle of rotation
+     * @return the new vector
+     */
+    public PVector rotateX(double theta) {
+        double oldY = this.y;
+        this.y = (this.y * Math.cos(theta)) - (this.z * Math.sin(theta));
+        this.z = (oldY * Math.sin(theta)) + (this.z * Math.cos(theta));
+        return this;
+    }
+
+    /**
+     * This method rotates the Vector in the Y access by angle theta.
+     *
+     * @param theta the angle of rotation
+     * @return the new vector
+     */
+    public PVector rotateY(double theta) {
+        double oldZ = this.z;
+        this.z = (this.z * Math.cos(theta)) - (this.x * Math.sin(theta));
+        this.x = (oldZ * Math.sin(theta)) + (this.z * Math.cos(theta));
+        return this;
+    }
+
+    /**
+     * This method rotates the Vector in the Z access by angle theta.
+     *
+     * @param theta the angle of rotation
+     * @return the new vector
+     */
+    public PVector rotateZ(double theta) {
+        double oldX = this.x;
+        this.x = (this.x * Math.cos(theta)) - (this.y * Math.sin(theta));
+        this.y = (oldX * Math.sin(theta)) + (this.y * Math.cos(theta));
         return this;
     }
 
@@ -297,6 +436,33 @@ public class PVector {
         y = v.y;
         z = v.z;
         return this;
+    }
+
+    /**
+     * This method sets the magnitude of the vector to the value used for the
+     * len parameter.
+     *
+     * @param len the new length of the vector
+     * @return the magnitude of the vector
+     */
+    public PVector setMag(double len) {
+        normalize();
+        mult(len);
+        return this;
+    }
+
+    /**
+     * This method sets the magnitude of the vector that has been passed in
+     * the parameters.
+     *
+     * @param vec the vector that will have it's magnitude set
+     * @param len the new length of the vector
+     * @return the magnitude of the vector
+     */
+    public PVector setMag(PVector vec, double len) {
+        vec = normalize(vec);
+        vec.mult(len);
+        return vec;
     }
 
     /**

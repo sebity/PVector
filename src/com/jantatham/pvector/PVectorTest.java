@@ -90,6 +90,13 @@ public class PVectorTest {
     }
 
     @org.junit.Test
+    public void heading() throws Exception {
+        PVector pv = new PVector();
+        double result = pv.heading(10.0, 20.0);
+        assertEquals(result, 1.1071, 0.001);
+    }
+
+    @org.junit.Test
     public void magnitude_calculate() throws Exception {
         PVector pv = new PVector(20,30,40);
         double result = pv.mag();
@@ -101,6 +108,13 @@ public class PVectorTest {
         PVector pv = new PVector(20,30,40);
         double result = pv.magSq();
         assertEquals(result, 2900, 0);
+    }
+
+    @org.junit.Test
+    public void map_test() throws Exception {
+        PVector pv = new PVector();
+        double result = pv.map(110, 0, 100, -20, -10);
+        assertEquals(result, -9.0, 0);
     }
 
     @org.junit.Test
