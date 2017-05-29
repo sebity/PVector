@@ -130,6 +130,18 @@ public class PVector {
         return new PVector(x, y, z);
     }
 
+    /**
+     * This method calculates the distance between two points.
+     *
+     * @param x1 first vector x coordinate
+     * @param y1 first vector y coordinate
+     * @param x2 second vector x coordinate
+     * @param y2 second vector y coordinate
+     * @return the euclidean distance
+     */
+    public double dist(double x1, double y1, double x2, double y2) {
+        return sqrt(Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2));
+    }
 
     /**
      * This method calculates the distance between two points.

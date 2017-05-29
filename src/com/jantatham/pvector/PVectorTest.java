@@ -62,6 +62,12 @@ public class PVectorTest {
     }
 
     @org.junit.Test
+    public void dist_two_coordinates() throws Exception {
+        PVector p = new PVector();
+        assertEquals(p.dist(10, 20, 60, 80), 78.10249, 0.001);
+    }
+
+    @org.junit.Test
     public void dist_single_pVector() throws Exception {
         PVector pv1 = new PVector(10,20,0);
         PVector pv2 = new PVector(60, 80, 0);
