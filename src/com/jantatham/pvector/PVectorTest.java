@@ -62,6 +62,21 @@ public class PVectorTest {
     }
 
     @org.junit.Test
+    public void dist_single_pVector() throws Exception {
+        PVector pv1 = new PVector(10,20,0);
+        PVector pv2 = new PVector(60, 80, 0);
+        assertEquals(pv1.dist(pv2), 78.10249, 0.001);
+    }
+
+    @org.junit.Test
+    public void dist_double_pVector() throws Exception {
+        PVector pv1 = new PVector(10,20,0);
+        PVector pv2 = new PVector(60, 80, 0);
+        PVector p = new PVector();
+        assertEquals(p.dist(pv1,pv2), 78.10249, 0.001);
+    }
+
+    @org.junit.Test
     public void div_pVector_by_scalar() throws Exception {
         PVector pv = new PVector(4,8,16);
         pv.div(2);

@@ -1,17 +1,17 @@
 package com.jantatham.pvector;
 
-import static java.lang.Math.PI;
-
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("Testing PVector Class...");
 
-        PVector pv = new PVector(2,3,4);
+        PVector pv1 = new PVector(10,20,0);
+        PVector pv2 = new PVector(60, 80, 0);
+        PVector p = new PVector();
 
-        pv.rotateX(PI/2);
+        double x = p.dist(pv1, pv2);
 
-        System.out.println(pv.x + "x" + pv.y + "x" + pv.z);
+        System.out.println(x);
 
 
     }
