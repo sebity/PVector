@@ -1,7 +1,6 @@
 package com.jantatham.pvector;
 
-import static java.lang.Math.atan2;
-import static java.lang.Math.sqrt;
+import static java.lang.Math.*;
 
 /**
  * The PVector Class handles the 2D and 3D vector translations.
@@ -243,6 +242,32 @@ public class PVector {
     }
 
     /**
+     *
+     * @param angle the angle
+     * @return the PVector
+     */
+    static public PVector fromAngle(double angle) {
+        return fromAngle(angle, null);
+    }
+
+    /**
+     *
+     * @param angle the angle
+     * @param target the target PVector
+     * @return the PVector
+     */
+    static public PVector fromAngle(double angle, PVector target) {
+        if(target == null) {
+            target = new PVector(cos(angle), sin(angle), 0);
+        }
+        else {
+            target.set(cos(angle), sin(angle), 0);
+        }
+
+        return target;
+    }
+
+    /**
      * This method calculates the angle of rotation for this vector in 2D only.
      *
      * @return the angle of rotation
@@ -264,6 +289,19 @@ public class PVector {
         double angle = atan2(vy,vx) - atan2(y,x);
 
         return angle;
+    }
+
+    /**
+     *
+     * @param max the maximum limit
+     * @return the vector
+     */
+    public PVector limit(double max) {
+        if(this.magSq() > max * max) {
+            this.normalize();
+            this.mult(max);
+        }
+        return this;
     }
 
     /**
@@ -385,8 +423,8 @@ public class PVector {
      */
     public PVector rotate(double theta) {
         double oldX = this.x;
-        this.x = (this.x * Math.cos(theta)) - (this.y * Math.sin(theta));
-        this.y = (oldX * Math.sin(theta)) + (this.y * Math.cos(theta));
+        this.x = (this.x * cos(theta)) - (this.y * sin(theta));
+        this.y = (oldX * sin(theta)) + (this.y * cos(theta));
         return this;
     }
 
@@ -399,8 +437,8 @@ public class PVector {
      */
     public PVector rotateX(double theta) {
         double oldY = this.y;
-        this.y = (this.y * Math.cos(theta)) - (this.z * Math.sin(theta));
-        this.z = (oldY * Math.sin(theta)) + (this.z * Math.cos(theta));
+        this.y = (this.y * cos(theta)) - (this.z * sin(theta));
+        this.z = (oldY * sin(theta)) + (this.z * cos(theta));
         return this;
     }
 
@@ -412,8 +450,8 @@ public class PVector {
      */
     public PVector rotateY(double theta) {
         double oldZ = this.z;
-        this.z = (this.z * Math.cos(theta)) - (this.x * Math.sin(theta));
-        this.x = (oldZ * Math.sin(theta)) + (this.z * Math.cos(theta));
+        this.z = (this.z * cos(theta)) - (this.x * sin(theta));
+        this.x = (oldZ * sin(theta)) + (this.z * cos(theta));
         return this;
     }
 
@@ -425,8 +463,8 @@ public class PVector {
      */
     public PVector rotateZ(double theta) {
         double oldX = this.x;
-        this.x = (this.x * Math.cos(theta)) - (this.y * Math.sin(theta));
-        this.y = (oldX * Math.sin(theta)) + (this.y * Math.cos(theta));
+        this.x = (this.x * cos(theta)) - (this.y * sin(theta));
+        this.y = (oldX * sin(theta)) + (this.y * cos(theta));
         return this;
     }
 

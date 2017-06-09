@@ -1,5 +1,6 @@
 package com.jantatham.pvector;
 
+import static java.lang.Math.PI;
 import static junit.framework.TestCase.assertEquals;
 
 /**
@@ -111,10 +112,26 @@ public class PVectorTest {
     }
 
     @org.junit.Test
+    public void fromAngle() throws Exception {
+        PVector p;
+        p = PVector.fromAngle(PI/3);
+        assertEquals(p.x, 0.500000, 0.001);
+        assertEquals(p.y, 0.86602540, 0.001);
+    }
+
+    @org.junit.Test
     public void heading() throws Exception {
         PVector pv = new PVector();
         double result = pv.heading(10.0, 20.0);
         assertEquals(result, 1.1071, 0.001);
+    }
+
+    @org.junit.Test
+    public void limit() throws Exception {
+        PVector pv = new PVector(10,20,2);
+        pv.limit(5);
+        assertEquals(pv.x, 2.227177, 0.001);
+        assertEquals(pv.y, 4.454354, 0.001);
     }
 
     @org.junit.Test
