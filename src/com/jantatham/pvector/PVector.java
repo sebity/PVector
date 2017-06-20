@@ -1,5 +1,7 @@
 package com.jantatham.pvector;
 
+import javafx.scene.paint.Color;
+
 import static java.lang.Math.*;
 
 /**
@@ -117,6 +119,22 @@ public class PVector {
             target.set(v1.x+v2.x, v1.y+v2.y, v1.z+v2.z);
         }
         return target;
+    }
+
+    /**
+     * This method converts an RBGA integer into RGBA array of values.
+     *
+     * @param color RGBA integer
+     * @return array of RGBA values
+     */
+    public int[] colorIntegerToRGBA(int color) {
+        int a = (color >> 24) & 255;
+        int r = (color >> 16) & 255;
+        int g = (color >> 8) & 255;
+        int b = (color >> 0) & 255;
+
+        int[] rgba = {r,g,b,a};
+        return rgba;
     }
 
     /**
@@ -289,6 +307,83 @@ public class PVector {
         double angle = atan2(vy,vx) - atan2(y,x);
 
         return angle;
+    }
+
+    /**
+     * Calculates a number between two numbers at a specific increment.
+     *
+     * @param vec
+     * @param amount
+     * @return this vector
+     */
+    public PVector lerp(PVector vec, double amount) {
+        if (amount < 0) amount = 0;
+        if (amount > 1) amount = 1;
+
+        x = (x + (vec.x-x) * amount);
+        y = (y + (vec.y-y) * amount);
+        z = (z + (vec.z-z) * amount);
+        return this;
+    }
+
+    /**
+     * Calculates a number between two numbers at a specific increment.
+     *
+     * @param vec1
+     * @param vec2
+     * @param amount
+     * @return this vector
+     */
+    public PVector lerp(PVector vec1, PVector vec2, double amount) {
+        PVector vec = vec1.copy();
+        vec.lerp(vec2, amount);
+        return vec;
+    }
+
+    /**
+     * Calculates a number between two numbers at a specific increment.
+     *
+     * @param x
+     * @param y
+     * @param z
+     * @param amount
+     * @return this vector
+     */
+    public PVector lerp(double x, double y, double z, double amount) {
+        if (amount < 0) amount = 0;
+        if (amount > 1) amount = 1;
+
+        this.x = (this.x + (x-this.x) * amount);
+        this.y = (this.y + (y-this.y) * amount);
+        this.z = (this.z + (z-this.z) * amount);
+        return this;
+    }
+
+    /**
+     * 	Calculates a color or colors between two color at a specific increment.
+     * @param c1 int: interpolate from this color
+     * @param c2 int: interpolate to this color
+     * @param amount between 0.0 and 1.0
+     * @return integer
+     */
+    public int lerpColorRGBFX(Color c1, Color c2, double amount) {
+        if (amount < 0) amount = 0;
+        if (amount > 1) amount = 1;
+
+        int r1 = (int) (c1.getRed() * 255);
+        int g1 = (int) (c1.getGreen() * 255);
+        int b1 = (int) (c1.getBlue() * 255);
+        int a1 = (int) (c1.getOpacity());
+
+        int r2 = (int) (c2.getRed() * 255);
+        int g2 = (int) (c2.getGreen() * 255);
+        int b2 = (int) (c2.getBlue() * 255);
+        int a2 = (int) (c2.getOpacity());
+
+        return ((int)(Math.round(a1 + (a2-a1) * amount) << 24) |
+                (int)(Math.round(r1 + (r2-r1) * amount) << 16) |
+                (int)(Math.round(g1 + (g2-g1) * amount) << 8) |
+                (int)(Math.round(b1 + (b2-b1) * amount)));
     }
 
     /**
