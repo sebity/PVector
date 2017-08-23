@@ -56,6 +56,14 @@ public class PVectorTest {
     }
 
     @org.junit.Test
+    public void angleBetween_two_pVectors() throws Exception {
+        PVector pv1 = new PVector(10, 20);
+        PVector pv2 = new PVector(60, 80);
+        double answer = PVector.angleBetween(pv1, pv2);
+        assertEquals(Math.toDegrees(answer), 10.3048464687, 0.001);
+    }
+
+    @org.junit.Test
     public void copy_pVector() throws Exception {
         PVector pv1 = new PVector(4,8,16);
         PVector pv2 = pv1.copy();

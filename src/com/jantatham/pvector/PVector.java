@@ -121,6 +121,30 @@ public class PVector {
         return target;
     }
 
+    static public double angleBetween(PVector v1, PVector v2) {
+        if(v1.x == 0 && v1.y == 0 && v1.z == 0) {
+            return 0.0;
+        }
+
+        if(v2.x == 0 && v2.y == 0 && v2.z == 0) {
+            return 0.0;
+        }
+
+        double dot = v1.dot(v2);
+        double v1mag = v1.mag();
+        double v2mag = v2.mag();
+        double angle = dot / (v1mag * v2mag);
+
+        if(angle <= -1) {
+            return Math.PI;
+        }
+        else if (angle >= 1) {
+            return 0;
+        }
+
+        return Math.acos(angle);
+    }
+
     /**
      * This method converts an RBGA integer into RGBA array of values.
      *
